@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Calculator Body -->
+<div class="calc-body">
+
+    <!-- Calculator Display Screen -->
+    <div class="calc-screen">
+        <div id="calc-operation"></div>
+        <div id="calc-typed">
+            <input style="height: 30px; background-color: #3A4655;color: white; padding: 10px; width: 220px;" type="text" placeholder="0" id="result" readonly>
+        </div>
+    </div>
+    
+    <!-- Calculator Buttons -->
+    <div class="calc-button-row">
+        <button id="para" onclick="displayData('(')" class="ac">(</button>
+        <button id="para" onclick="displayData(')')" class="opt">)</button>
+        <button id="seven" onclick="removelast()" class="opt">&#8592</button>
+        <button id="division" onclick="displayData('/')" class="opt">&#247;</button>
+        <button id="seven" onclick="displayData('7')">7</button>
+        <button id="eight" onclick="displayData('8')">8</button>
+        <button id="nine" onclick="displayData('9')">9</button>
+        <button id="mul" onclick="displayData('*')" class="opt">&#215;</button>
+        <button id="four" onclick="displayData('4')">4</button>
+        <button id="five" onclick="displayData('5')" >5</button>
+        <button id="six" onclick="displayData('6')">6</button>
+        <button id="sub" onclick="displayData('-')" class="opt">&#8722;</button>
+        <button id="one" onclick="displayData('1')">1</button>
+        <button id="two" onclick="displayData('2')">2</button>
+        <button id="three" onclick="displayData('3')">3</button>
+        <button id="add" onclick="displayData('+')" class="opt">&#43;</button>
+        <button id="seven" onclick="displayData('0')">0</button>
+        <button id="dot " onclick="displayData('.')">.</button>
+        <button id="clear" onclick="clearData()">AC</button>
+        <button id="equalto" onclick="calculateResult()" class="opt">&#61;</button>
+    </div>
+</body>
+<script src="./main.js">
+    
+</script>
+</html>
